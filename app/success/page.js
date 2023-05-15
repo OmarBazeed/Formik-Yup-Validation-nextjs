@@ -17,7 +17,7 @@ const Success = () => {
                 </p>
             </div>
 
-            <Confetti gravity={0.2} numberOfPieces={200} width={window.innerWidth} />
+            <Confetti gravity={0.2} numberOfPieces={200} />
 
         </main>
     )
