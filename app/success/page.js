@@ -3,14 +3,10 @@
 import Confetti from 'react-confetti';
 
 
-
 const Success = () => {
 
-
-
-
     return (
-        <main className='flex items-center justify-center'>
+        <main className='flex items-center justify-center w-full'>
             <div className="bg-white rounded-lg w-1/3 font-latoRegular text-gray-700 p-16">
                 <h1 className="text-3xl pb-4 font-latoBold">
                     Thanks for the email {/*router.query.name*/} ✨
@@ -21,7 +17,7 @@ const Success = () => {
                 </p>
             </div>
 
-            <Confetti gravity={0.2} numberOfPieces={200} />
+            <Confetti gravity={0.2} numberOfPieces={200} width={window.innerWidth} />
 
         </main>
     )

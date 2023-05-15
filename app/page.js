@@ -40,10 +40,11 @@ export default function Home() {
 
   return (
 
-    <main className="h-screen items-center flex justify-center">
+    <main className="items-center flex justify-center w-full">
 
-      <form className=" bg-white flex rounded-lg w-1/2" onSubmit={formik.handleSubmit}>
-        <div className="flex-1 text-gray-700  p-20">
+      <form className=" bg-white flex rounded-lg flex-wrap" onSubmit={formik.handleSubmit}>
+
+        <div className="text-gray-700 p-20 max-w-[500px] ">
           <h1 className="text-3xl pb-2 font-latoBold">
             Lets get started 👋
           </h1>
@@ -51,7 +52,9 @@ export default function Home() {
             Join our E-learning platform today and unlock over 500+ courses
             and digital assets ready to download.
           </p>
+
           <div className="mt-6 ">
+
             {/* Name input field */}
             <div className="pb-4">
               <label
@@ -66,7 +69,7 @@ export default function Home() {
                   : "Name"}
               </label>
               <input
-                className="border-2 border-gray-500 p-2 rounded-md w-1/2 focus:border-teal-500 focus:ring-teal-500 "
+                className="border-2 border-gray-500 p-2 rounded-md w-3/4 focus:border-teal-500 focus:ring-teal-500 "
                 type="text"
                 name="name"
                 placeholder="Enter your name"
@@ -91,7 +94,7 @@ export default function Home() {
 
               <p></p>
               <input
-                className="border-2 border-gray-500 p-2 rounded-md w-1/2 focus:border-teal-500 focus:ring-teal-500"
+                className="border-2 border-gray-500 p-2 rounded-md w-3/4 focus:border-teal-500 focus:ring-teal-500"
                 type="email"
                 name="email"
                 placeholder="Enter your email address"
@@ -109,7 +112,7 @@ export default function Home() {
                 Country
               </label>
               <select
-                className="border-2 border-gray-500 p-2 rounded-md w-1/2 focus:border-teal-500 focus:ring-teal-500"
+                className="border-2 border-gray-500 p-2 rounded-md w-3/4 focus:border-teal-500 focus:ring-teal-500"
                 name="country"
                 onChange={formik.handleChange}
                 value={formik.values.country}
@@ -155,17 +158,20 @@ export default function Home() {
               Start learning today!
             </button>
           </div>
+
         </div>
 
-        <div className="relative flex-1">
+        <div className="m-auto">
           <Image
-            className=" object-cover rounded-lg"
-            fill
             priority
             src={formImage}
             alt="form-learn"
+            width={400}
+            height={400}
+            className="rounded hue-rotate-[45deg]"
           />
         </div>
+
       </form>
 
     </main>
