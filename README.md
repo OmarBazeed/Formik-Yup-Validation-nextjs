@@ -14,7 +14,7 @@
    ``` 
   ---------------------------------------------------------------------------------------------------------------
  ### Live Demo : 
-[formik-yup-validation-tutorial](https://cheerful-lebkuchen-0d7901.netlify.app/](https://formik-yup-validation-nextjs-9mkeliz3g-omarbazeed.vercel.app/)
+[formik-yup-validation-tutorial](https://formik-yup-validation-nextjs.vercel.app/)
  
  ---------------------------------------------------------------------------------------------------------------
  ### Live Pictures :
