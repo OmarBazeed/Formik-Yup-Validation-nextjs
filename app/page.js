@@ -22,7 +22,7 @@ export default function Home() {
 
     validationSchema: yup.object({
       name: yup.string().required("Name Is Required").max(60, "Max Length Is 60 number"),
-      email: yup.string().required("Email Is Required").email("invalid email Here").max(60, "Max Length Is 60 number"),
+      email: yup.string().required("Email Is Required").email("invalid Email Was Written").max(60, "Max Length Is 60 number"),
       terms: yup.array().required("Checkbox Must Be Checked"),
       country: yup.string().required("You Have To Choose A Country ElseIf United Emirates")
     }),
